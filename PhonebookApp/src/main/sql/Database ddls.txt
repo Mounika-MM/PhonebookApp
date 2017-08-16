@@ -1,0 +1,22 @@
+CREATE DATABASE `test` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+
+CREATE TABLE `contact` (
+  `ContactID` int(11) NOT NULL AUTO_INCREMENT,
+  `FirstName` varchar(45) NOT NULL,
+  `LastName` varchar(45) NOT NULL,
+  `Home` varchar(10) NOT NULL,
+  `Mobile` varchar(10) DEFAULT NULL,
+  `Email` varchar(255) DEFAULT NULL,
+  `Group_Ids` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`ContactID`)
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `group` (
+  `GroupID` int(11) NOT NULL AUTO_INCREMENT,
+  `Name` varchar(45) NOT NULL,
+  `Type` varchar(45) DEFAULT NULL,
+  `Location` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`GroupID`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
